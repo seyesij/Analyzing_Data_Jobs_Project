@@ -4,7 +4,7 @@
     * Adeseye Sijuwade
     * Iron Hack, April - 2023
 
-In this project, I conducted an exploratory analysis and developed a predictive model for Data Analyst Jobs in the UK using data scraped from [Reed.co.uk](https://www.reed.co.uk). The primary goal was to leverage natural language processing (NLP) techniques to analyze job descriptions and predict whether a job is high or low paying. I also aimed to gain insights into the data analyst job market by exploring the dataset and identifying patterns and trends. As a bonus, I created a mini job search portal with filtering capabilities. By combining NLP techniques and data analysis, this project offers valuable insights and predictive power for job seekers and employers in the data analyst job market in the UK.
+In this project, I used natural language processing (NLP) techniques to predict the salary class (high or low) of Data Analyst jobs in the UK based on their job descriptions. By exploring the dataset and identifying patterns and trends, I gained valuable insights into the data analyst job market. Additionally, I developed a mini job search portal with filtering capabilities as a bonus. This project offers predictive power and valuable insights for job seekers and employers in the UK data jobs market.
 
 ## Overview
 Technologies Used: 
@@ -18,13 +18,13 @@ Technologies Used:
   * Streamlit
 
 ### Part 1: Data Collection - Web Scraping
-A web scraping python script was developed to retrieve information from Reed on Data Analyst jobs in the Uk using BeautifulSoup. Data scraped included job title, company, location, salary, job type, remote status, description and job link.
+A web scraping python script was developed to retrieve data analyst jobs information from [Reed.co.uk](https://www.reed.co.uk) using BeautifulSoup. Data scraped included job title, company, location, salary, job type, remote status, description and job link.
 
 ### Part 2: Data Cleaning and Wrangling
 Data cleaning and wrangling were done on the collected dataset to prepare it for analysis. This included removing any invalid, incorrect, or duplicate data points, fixing structural errors, data formatting, filtering unwanted outliers, handling missing data, and converting data types.
 
 ### Part 3: Exploratory Data Analysis
-In this part, exploratory data analysis (EDA) was performed to analyze and investigate the data and summarize its main characteristics. Data visualization techniques were used for this process including wordclouds for keywords analysis and barcharts and boxplots for salary analysis. 
+In this part, exploratory data analysis (EDA) was performed to analyze and investigate the data and summarize its main characteristics. Data visualization techniques were used for this process including wordclouds for keywords analysis and barcharts and boxplots for salary analyses. 
 
 ### Part 4: Modeling (NLP)
 Models for predicting the class label for salary (high or low) based on the text data (job description) were developed using Multinomial Naive Bayes and Logistic Regression. CountVectorizer was used to convert text data into a matrix of token counts which were used as input to train the machine learning model for text classification. The model's performance was evaluated using various performance metrics such as AUC, F1_score, Accuracy, Precision and Recall.
